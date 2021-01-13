@@ -10,11 +10,15 @@ sans-serif;
 Thin 100 Light 300 Regular 400
 */
 
+body {
+    min-height: 100vh;
+}
+
 .header {
     background-image: linear-gradient(to right, #fc4a1a, #f7b733);
     background-position: top;
     background-size: cover;
-    height: 27vh;
+    min-height: 35vh;
     position: relative;
 }
 
