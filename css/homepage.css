@@ -1,0 +1,60 @@
+/* Font rules */
+
+/* 
+font-family: 'Hachi Maru Pop',
+cursive;
+Regular 400
+
+font-family: 'Lato',
+sans-serif;
+Thin 100 Light 300 Regular 400
+*/
+
+.header {
+    background-image: linear-gradient(to right, #fc4a1a, #f7b733);
+    background-position: top;
+    background-size: cover;
+    height: 27vh;
+    position: relative;
+}
+
+/* SVG */
+.custom-shape-divider-bottom-1610502859 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1610502859 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1610502859 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* .logo {
+    max-height: 7rem !important;
+}
+
+.logoName {
+    max-height: 5rem !important;
+} */
+
+
+/* Footer */
+
+/* SVG */
+
+.footer {
+    height: 20vh;
+    position: relative;
+    background-image: linear-gradient(to right, #fc4a1a, #f7b733);
+}
