@@ -44,6 +44,12 @@
         .carousel-item:hover{
             cursor:pointer;
         }
+        #pictureDisplay{
+            padding:3em;
+        }
+        #textDisplay{
+            padding:3em;
+        }
         @keyframes clownify{
             0% {background-image:url("Henri.jpg");}
             100% {background-image:url("Henri-clown.png");}
@@ -55,6 +61,12 @@
             .bodyc{
                 background-color:red;
             }
+            #pictureDisplay{
+            padding:1em;
+        }
+        #textDisplay{
+            padding:1em;
+        }
         }
     </style>
 </head>
@@ -90,10 +102,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-sm-12 p-5" id="pictureDisplay">
+            <div class="col-md-6 col-sm-12" id="pictureDisplay">
                 <img class="img-fluid " src="Henri.jpg">
             </div>
-            <div class="col-md-6 col-sm-12 p-5">
+            <div class="col-md-6 col-sm-12" id="textDisplay">
+                <h3>Boring henry</h3>
                     <p class="staff-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                     aliquip ex ea commodo consequat consectetur tempor.</p>
