@@ -10,10 +10,13 @@ sans-serif;
 Thin 100 Light 300 Regular 400
 */
 
-h3,
-h6 {
-    font-family: 'Hachi Maru Pop',
-        cursive;
+/* html {
+    min-height: 100%;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: 'Hachi Maru Pop',
+        cursive; */
     color: #7C48F0;
 }
 
@@ -23,10 +26,11 @@ h6 {
 
 
 body {
-    font-family: 'Lato',
-        sans-serif;
+    /* font-family: 'Lato',
+        sans-serif; */
     font-size: 1.2rem;
     font-weight: 300;
+    /* min-height: 100%; */
 }
 
 p {
@@ -41,8 +45,8 @@ section {
     margin-top: 4rem !important;
 }
 
-footer {
-    min-height: 50vh;
+/* footer {
+    margin-top: auto;
     position: relative;
     background-image: linear-gradient(to right, #fc4a1a, #f7b733);
 }
@@ -56,7 +60,7 @@ footer {
 }
 
 /* SVG */
-.custom-shape-divider-bottom-1610575905 {
+/* .custom-shape-divider-bottom-1610575905 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -64,9 +68,9 @@ footer {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-}
+} */
 
-.custom-shape-divider-bottom-1610575905 svg {
+/* .custom-shape-divider-bottom-1610575905 svg {
     position: relative;
     display: block;
     width: calc(105% + 1.3px);
@@ -75,12 +79,105 @@ footer {
 
 .custom-shape-divider-bottom-1610575905 .shape-fill {
     fill: #FFFFFF;
+} */
+
+/* SVG layer 1 */
+/* .custom-shape-divider-top-1610641095 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
+}
+
+.custom-shape-divider-top-1610641095 svg {
+    position: relative;
+    display: block;
+    width: calc(125% + 1.3px);
+    height: 283px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1610641095 .shape-fill {
+    fill: #fc4a1a;
+    opacity: 20%;
+} */
+
+/* SVG layer 2 */
+/* .custom-shape-divider-top-1610641636 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1610641636 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 400px;
+}
+
+.custom-shape-divider-top-1610641636 .shape-fill {
+    fill: #F7D134;
+    opacity: 15%;
+} */
+
+/* SVG layer 3 */
+/* .custom-shape-divider-top-1610641843 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1610641843 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 250px;
+}
+
+.custom-shape-divider-top-1610641843 .shape-fill {
+    fill: #FA992D;
+    opacity: 35%;
+} */
+
+/* SVG layer 4 */
+/* .custom-shape-divider-top-1610642313 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1610642313 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 226px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1610642313 .shape-fill {
+    fill: #FA992D;
+    opacity: 30%;
 }
 
 .mobileLogo {
     position: relative;
     z-index: 1;
-}
+} */
 
 /* Intro section */
 
@@ -88,6 +185,10 @@ footer {
     color: #fff;
     clip-path: polygon(100% 4%, 100% 89%, 0 95%, 0 8%);
     background-color: #7C48F0;
+}
+
+.video {
+    z-index: 200;
 }
 
 /* Explore courses section */
@@ -100,23 +201,34 @@ footer {
     max-height: 3rem;
 }
 
+.buttonThree {
+    clip-path: polygon(20% 33%, 91% 21%, 91% 69%, 20% 69%);
+}
+
+.element {
+    margin: 0 1rem;
+}
+
+.element > img {
+    height: 3%;
+}
+
 
 
 /* Footer */
 
-.buttonTwo {
+/* .buttonTwo {
     color: #fff;
     clip-path: polygon(0 21%, 95% 32%, 98% 77%, 4% 68%);
     background-color: #F6B733;
 }
 
-.socialIcons {
-    height: 2rem;
-    width: 3.5rem;
-}
+.footerContent > *, .socialContainer > * {
+    z-index: 100 !important;
+} */
 
 /* SVG */
-.custom-shape-divider-top-1610589798 {
+/* .custom-shape-divider-top-1610589798 {
     position: absolute;
     top: 0;
     left: 0;
@@ -131,33 +243,103 @@ footer {
     width: calc(100% + 1.3px);
     height: 66px;
     transform: rotateY(180deg);
-}
+} */
 
-.custom-shape-divider-top-1610589798 .shape-fill {
+/* .custom-shape-divider-top-1610589798 .shape-fill {
     fill: #FFFFFF;
-}
+} */
 
-
-/* BLOBS */
-.blob {
-    width: 1000px;
-    height: 500px;
+/*  SVG footer layer 1 */
+/* .custom-shape-divider-bottom-1610642658 {
     position: absolute;
-    z-index: -1;
-    right: 100px;
-    transform: translateY(-20px) translateX(-700px) rotate(20deg);
-    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-.blobTwo {
-    width: 400px;
-    height: 700px;
-    position: absolute;
-    z-index: -1;
-    right: 100px;
-    transform: translateY(-280px) translateX(175px);
-    opacity: 0.8;
+.custom-shape-divider-bottom-1610642658 svg {
+    position: relative;
+    display: block;
+    width: calc(179% + 1.3px);
+    height: 450px;
 }
+
+.custom-shape-divider-bottom-1610642658 .shape-fill {
+    fill: #FA8628;
+} */
+
+/* SVG footer layer 2 */
+/* .custom-shape-divider-bottom-1610643294 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1610643294 svg {
+    position: relative;
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 362px;
+}
+
+.custom-shape-divider-bottom-1610643294 .shape-fill {
+    fill: #FA992D;
+    opacity: 30%;
+} */
+
+/* SVG footer layer 3 */
+/* .custom-shape-divider-bottom-1610643389 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg) scaleX(-1);
+}
+
+.custom-shape-divider-bottom-1610643389 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 450px;
+}
+
+.custom-shape-divider-bottom-1610643389 .shape-fill {
+    fill: #F6B733;
+    opacity: 20%;
+} */
+
+/* SVG footer layer 4 */
+/* .custom-shape-divider-bottom-1610643638 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg) scaleX(-1);
+}
+
+.custom-shape-divider-bottom-1610643638 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 450px;
+}
+
+.custom-shape-divider-bottom-1610643638 .shape-fill {
+    fill: #e3a82a;
+    opacity: 25%;
+} */
+
 
 
 
@@ -176,9 +358,13 @@ footer {
         width: 98%;
     }
 
-    footer {
+    /* footer {
         min-height: 30vh;
     }
+
+    .socialIcons {
+        height: 2.3rem;
+    } */
 }
 
 @media only screen and (min-width: 992px) {
