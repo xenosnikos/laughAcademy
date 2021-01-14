@@ -13,10 +13,7 @@
             background-color:black;
         }
         .container{
-            background-color:lightblue;
-        }
-        .col{
-            background-color:pink;
+            background-color:white;
         }
         .carousel-control-prev-icon {
             background-image: url("lefticon.png");
@@ -28,18 +25,14 @@
             width:3em;
             height:3em;
         }
-        /* .carousel-indicators{
-        } */
+        .carousel-indicators li{
+            background-color:red;
+        }
         #myCarousel{
             margin:1em 10em;
         }
         .staff-description{
             font-size:1.1em;
-        }
-        .clownify-henri{
-            animation-name: clownify;
-            animation-duration: 4s;
-            animation-fill-mode:forwards;
         }
         .carousel-item:hover{
             cursor:pointer;
@@ -50,31 +43,87 @@
         #textDisplay{
             padding:3em;
         }
+        .margin-general{
+            padding:3em;
+        }
         #toggle-button{
             min-width: 187px;
         }
-        @keyframes clownify{
-            0% {background-image:url("Henri.jpg");}
-            100% {background-image:url("Henri-clown.png");}
+        h2{
+            font-size: 2.5em;
+            font-weight:bold;
+        }
+        .picture-size{
+            max-height:250px;
+            height:auto;
+        }
+        .picture-size-bigger{
+            max-height:300px;
+            height:auto;
+        }
+        .picture-size-biggest{
+            max-height:350px;
+            height:auto;
+        }
+        .area-1{
+            background-image:url("Laughacademy - Support/James.jpg");
+            min-width:320px;
+            min-height:220px;
+            background-repeat: no-repeat;
+            background-size:320px 220px;
+            background-position: center;
+        }
+        .rainbow{
+            animation-name: rainbowAnimation;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .staff-picture:hover{
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            transform:rotateY(180deg);
+        }
+        @keyframes rainbowAnimation{
+            0% {color:red;}
+            20% {color:green;}
+            36% {color:blue;}
+            65% {color:orange;}
+            78% {color:purple;}
+            100% {color:yellow;}
         }
         @media screen and (max-width: 768px){
             #myCarousel{
             margin:0.2em;
             }
-            .bodyc{
-                background-color:red;
-            }
             #pictureDisplay{
             padding:1em;
-        }
-        #textDisplay{
+            }
+            #textDisplay{
             padding:1em;
-        }
+            }
+            .margin-general{
+            padding:1em;
+            }
+            .sml-center{
+                text-align:center;
+            }
+            .left-justified{
+                text-align:left;
+            }
+            .border-on-sml{
+                border-top:2px solid black;
+            }
         }
     </style>
 </head>
-<body class="bodyc">
+<body>
     <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="rainbow">Main Staff</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12 ">
                 <!--Carousel-START-###############################################################################################-->
@@ -83,14 +132,26 @@
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
                     </ol>
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
-                        <div class="carousel-item active henri-parent">
-                            <img id="henri-carousel" class="img-fluid" src="Henri.jpg" alt="First Slide">
+                        <div class="carousel-item active">
+                            <img id="peter-carousel" class="img-fluid" src="Peter.jpg" alt="First Slide">
+                        </div>
+                        <div class="carousel-item henri-parent">
+                            <img id="henri-carousel" class="img-fluid" src="Henri.jpg" alt="Second Slide">
                         </div>
                         <div class="carousel-item">
-                            <img id="julie-carousel" class="img-fluid" src="Julie.jpg" alt="Second Slide">
+                            <img id="simon-carousel" class="img-fluid" src="Simon.jpg" alt="Third Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="shawna-carousel" class="img-fluid" src="Shawna.jpg" alt="Fourth Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="julie-carousel" class="img-fluid" src="Julie.jpg" alt="Fifth Slide">
                         </div>
                     </div>
                     <!-- Carousel controls -->
@@ -105,15 +166,82 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-sm-12" id="pictureDisplay">
-                <img class="img-fluid " src="Henri.jpg">
+            <div class="col text-center">
+                <h2 class="rainbow">Get To Know Us</h2>
             </div>
-            <div class="col-md-6 col-sm-12" id="textDisplay">
-                <h3>Boring henry</h3>
-                    <p class="staff-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12" id="pictureDisplay">
+                <img class="img-fluid " src="Peter.jpg">
+            </div>
+            <div class="col-md-6 col-sm-12 sml-center align-self-center" id="textDisplay">
+                <h3 class="sml-center">Peter VanHaussen</h3>
+                <h4 class="sml-center">Artistic-Director and Founder</h4>
+                    <p class="staff-description align-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                     aliquip ex ea commodo consequat consectetur tempor.</p>
-                    <button id="toggle-button" class="btn-primary btn-lg" onclick=funBoring()>Make Me Fun!</button>
+                    <button id="toggle-button" class="btn-primary btn-lg sml-center" onclick=funBoring()>Make Me Fun!</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="rainbow">Teachers</h2>
+            </div>
+        </div>
+        <div class="row s">
+            <div class="col-sm-12 col-md-6 staff-descriptions margin-general align-self-center order-2 order-md-1">
+                <h3 class="sml-center">James</h3>
+                <h4 class="sml-center">Teacher and Support Staff</h4>
+                <p class="staff-description align-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat consectetur tempor.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 staff-picture margin-general align-self-center text-center order-1 order-md-2 border-on-sml">
+                <img class="img-fluid picture-size" src="Laughacademy - Support/James.jpg">
+            </div>
+            <div class="col-sm-12 col-md-6 staff-picture margin-general align-self-center text-center order-3 order-md-3 border-on-sml">
+                <img class="img-fluid picture-size" src="Laughacademy - Support/Leanne.jpg">
+            </div>
+            <div class="col-sm-12 col-md-6 staff-descriptions margin-general justify-content-center center-block align-self-center order-4 order-md-4">
+                <h3 class="sml-center">Leanne</h3>
+                <h4 class="sml-center">Teacher and Chief Baloon Animal Technician</h4>
+                <p class="staff-description align-left ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat consectetur tempor.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 staff-descriptions margin-general align-self-center order-2 order-md-1">
+                <h3 class="sml-center">Laura</h3>
+                <h4 class="sml-center">Teacher and Support Staff</h4>
+                <p class="staff-description align-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat consectetur tempor.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 staff-picture margin-general align-self-center text-center order-1 order-md-2 border-on-sml">
+                <img class="img-fluid picture-size-bigger" src="Laughacademy - Support/Laura.jpg">
+            </div>
+            <div class="col-sm-12 col-md-6 staff-picture margin-general align-self-center text-center order-3 order-md-3 border-on-sml">
+                <img class="img-fluid picture-size-bigger" src="Laughacademy - Support/Nick.jpg">
+            </div>
+            <div class="col-sm-12 col-md-6 staff-descriptions margin-general justify-content-center center-block align-self-center order-4 order-md-4">
+                <h3 class="sml-center">Nick</h3>
+                <h4 class="sml-center">Teacher and Juggler Extraordinaire</h4>
+                <p class="staff-description align-left ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat consectetur tempor.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 staff-descriptions margin-general align-self-center order-2 order-md-1">
+                <h3 class="sml-center">Sherman</h3>
+                <h4 class="sml-center">Teacher and Jumping Enthusiast</h4>
+                <p class="staff-description align-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat consectetur tempor.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 staff-picture margin-general align-self-center text-center order-1 order-md-2 border-on-sml">
+                <img class="img-fluid picture-size-biggest" src="Laughacademy - Support/Sherman.jpg">
             </div>
         </div>
     </div>

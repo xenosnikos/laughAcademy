@@ -1,30 +1,33 @@
-        // const body = document.getElementsByTagName('body');
-        // body.addEventListener("click", e =>{
-        //     console.log('aaaaa');
-        // })
+
 
         var currentSelection = document.getElementById('henri-carousel');
         var url = "";
-        var funVersion = '<img class="img-fluid " src="Henri-clown.png">';
-        var boringVersion = '<img class="img-fluid " src="Henri.jpg">';
+        var funVersion = '<img class="img-fluid " src="Peter-clown.jpg">';
+        var boringVersion = '<img class="img-fluid " src="Peter.jpg">';
         var pictureToggled = false ;
         var buttonContent = '<button id="toggle-button" class="btn-primary btn-lg" onclick=funBoring()>Make Me Boring!</button>';
-        // var henriParent = document.getElementById("henri-carousel").addEventListener("mouseover", e => {
-        //     currentSelection = e.target;
-        //     url = '<img class="img-fluid clownify-henri" src="Henri-clown.png">';
-        //     swapCarousel();
-        // });
+        var headingContent = "";
+        var textContent = "";
+        var jobDescription = "";
 
-        // var henriCarousel = document.getElementById("henri-carousel").addEventListener("mouseover", e => {
-        //     currentSelection = e.target;
-        //     url = '<img class="img-fluid clownify-henri" src="Henri-clown.png">';
-        //     changePicture();
-        // });
+        var peterCarousel = document.getElementById("peter-carousel").addEventListener("click", e => {
+            url = '<img class="img-fluid clownify-henri" src="Peter-clown.jpg">';
+            headingContent = "Peter VanHaussen";
+            jobDescription = "Artistic-Director and Founder";
+            textContent = 'PETER Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
+            ' et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
+            'aliquip ex ea commodo consequat consectetur tempor.'
+            pictureToggled= true;
+            buttonContent = '<button id="toggle-button" class="btn-primary btn-lg" onclick=funBoring()>Make Me Boring!</button>';
+            funVersion = '<img class="img-fluid " src="Peter-clown.jpg">';
+            boringVersion = '<img class="img-fluid " src="peter.jpg">';
+            changePicture();
+        });
 
         var henriCarousel = document.getElementById("henri-carousel").addEventListener("click", e => {
-            currentSelection = e.target;
             url = '<img class="img-fluid clownify-henri" src="Henri-clown.png">';
-            headingContent = "Fun Henry";
+            headingContent = "Henry Cocolata";
+            jobDescription = "Co-Artistic-Director";
             textContent = 'HENRY Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
             ' et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
             'aliquip ex ea commodo consequat consectetur tempor.'
@@ -35,10 +38,38 @@
             changePicture();
         });
 
+        var simonCarousel = document.getElementById("simon-carousel").addEventListener("click", e => {
+            url = '<img class="img-fluid clownify-henri" src="Simon-clown.jpg">';
+            headingContent = "Simon McMallet";
+            jobDescription = "Set Coordinator";
+            textContent = 'SIMON Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
+            ' et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
+            'aliquip ex ea commodo consequat consectetur tempor.'
+            pictureToggled= true;
+            buttonContent = '<button id="toggle-button" class="btn-primary btn-lg" onclick=funBoring()>Make Me Boring!</button>';
+            funVersion = '<img class="img-fluid " src="Simon-clown.jpg">';
+            boringVersion = '<img class="img-fluid " src="Simon.jpg">';
+            changePicture();
+        });
+
+        var shawnaCarousel = document.getElementById("shawna-carousel").addEventListener("click", e => {
+            url = '<img class="img-fluid clownify-henri" src="Shawna-clown.jpg">';
+            headingContent = "Shawna Smith";
+            jobDescription = "Administrator";
+            textContent = 'SHAWNA Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
+            ' et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
+            'aliquip ex ea commodo consequat consectetur tempor.'
+            pictureToggled= true;
+            buttonContent = '<button id="toggle-button" class="btn-primary btn-lg" onclick=funBoring()>Make Me Boring!</button>';
+            funVersion = '<img class="img-fluid " src="Shawna-clown.jpg">';
+            boringVersion = '<img class="img-fluid " src="Shawna.jpg">';
+            changePicture();
+        });
+
         var julieCarousel = document.getElementById("julie-carousel").addEventListener('click', e => {
-            currentSelection = e.target;
             url = '<img class="img-fluid " src="Julie-clown.jpg">';
-            headingContent = "Julie";
+            headingContent = "Julie Hanes";
+            jobDescription = "Staff Coordinator";
             textContent = 'JULIE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
             ' et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
             'aliquip ex ea commodo consequat consectetur tempor.'
@@ -48,12 +79,6 @@
             boringVersion = '<img class="img-fluid " src="Julie.jpg">';
             changePicture();
         });
-
-        // julieCarousel = document.getElementById("julie-carousel").addEventListener('mouseover', e => {
-        //     currentSelection = e.target;
-        //     url = '<img class="img-fluid " src="Julie-clown.jpg">';
-        //     changePicture();
-        // });
 
         function funBoring(){
             var picture = document.createElement("img");
@@ -77,16 +102,20 @@
             var picture = document.createElement("img");
             var heading = document.createElement("h3");
             var text = document.createElement("p");
+            text.className = ("left-justified");
             var button = document.createElement("button");
+            var jobTitle = document.createElement("h4");
             const textDisplay = document.getElementById("textDisplay");
             const pictureDisplay = document.getElementById("pictureDisplay");
             pictureDisplay.innerHTML="";
             textDisplay.innerHTML="";
             pictureDisplay.appendChild(picture);
             textDisplay.appendChild(heading);
+            textDisplay.appendChild(jobTitle);
             textDisplay.appendChild(text);
             textDisplay.appendChild(button);
             heading.innerHTML = headingContent;
+            jobTitle.innerHTML = jobDescription;
             text.innerHTML = textContent;
             picture.outerHTML= url;
             button.outerHTML = buttonContent;
