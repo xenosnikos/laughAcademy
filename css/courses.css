@@ -1,0 +1,37 @@
+@use 'courses';
+.custom-shape-divider-top-1610591588 {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.pageTitle{
+  font-size: 3rem;
+  color: red;
+  font-family:'Hachi Maru Pop',cursive;
+  margin-bottom: 50px;
+  
+}
+
+.custom-shape-divider-top-1610591588 svg {
+  position: relative;
+  display: block;
+  width: calc(105% + 1.3px);
+  height: 106px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1610591588 .shape-fill {
+  fill: #E76B29CF;
+}
+
+.classLink{
+  color: red;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=signup.css.map */

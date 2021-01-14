@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+body {
+    background-color: #ebeef2;
+    font-family: Arial, "Arial Narrow", Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+// wave shape of header 
+.custom-shape-divider-top-1610591588 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1610591588 svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 106px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1610591588 .shape-fill {
+    fill: #E76B29CF;
+}
+// end of wave shape of header 
+
+// wave shape of footer 
+.custom-shape-divider-bottom-1610594661 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1610594661 svg {
+    position: relative;
+    display: block;
+    width: calc(122% + 1.3px);
+    height: 46px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1610594661 .shape-fill {
+    fill: #E76B29CF;
+}
+// end of wave shape of footer 
