@@ -1,5 +1,9 @@
 @import "headerfooter";
 
 .input-mandatory{
-    border: red solid 1px;
+    
+}
+
+.input-missing{
+    border-color: red;
 }
