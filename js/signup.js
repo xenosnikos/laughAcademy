@@ -42,16 +42,19 @@ function reviewForm(){
     console.log(`comments: ${comments}`);
 
     const mandatoryElements = document.getElementsByClassName("input-mandatory");
+    const missingElements = document.getElementsByClassName("input-missing");
+    //reset the previous checking mark of mandatory field
+    if(missingElements.length>0){
+        for(let element of mandatoryElements){
+            element.classList.remove("input-missing");
+        }
+    }
+    //console.log(`1. review result: ${result}`);
+    //check whether mandatory fields are filled
     for(let element of mandatoryElements){
         if(element.value === ""){
-            //alert(`Please enter value of ${element.name}`);
+            //console.log(`Please enter value of ${element.name}`);
             element.classList.add("input-missing");
-            result = false;
-            return result;
-        }
-        else if(titleElement.selectedIndex === 0){
-            //alert(`Please select ${titleElement.name}`);
-            titleElement.classList.add("input-missing");
             result = false;
             return result;
         }
@@ -60,7 +63,39 @@ function reviewForm(){
             result = true;
         }
     }
-    //console.log(`review result: ${result}`);
+    //verify whether passwaords are same
+    console.log(`password: ${pswdOne}`);
+    console.log(`password again: ${pswdTwo}`);
+    if(pswdOne !== pswdTwo){
+        alert("password is wrong");
+        passwordOElement.classList.add("input-missing");
+        passwordVElement.classList.add("input-missing");
+        result = false;
+        return result;
+    }
+    //check email format
+    let emailPattern = /^.+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    let emailSearchMatches = email.match(emailPattern);
+    //alert(`email is matched? ${emailSearchMatches}`);
+    if(emailSearchMatches == null){
+        emailElement.classList.add("input-missing");
+        result = false;
+        return result;
+    }
+    //check mobile phone number format
+    let mobilePattern = /^[0-9]{10}$/;
+    let mobileSearchMatches = mobile.match(mobilePattern);
+    //alert(`mobile is matched? ${mobileSearchMatches}`);
+    if(mobileSearchMatches == null){
+        mobileElement.classList.add("input-missing");
+        result = false;
+        return result;
+    }
+    //set default title as Mx. if not selected
+    if(titleElement.selectedIndex === 0){
+        titleElement.selectedIndex = titleElement.length-1;
+    }
+    console.log(`review result: ${result}`);
     return result;
 }
 
@@ -72,6 +107,7 @@ function signup(){
         return;
     }
     else{
+        //alert(`submit`);
         document.getElementById("signupForm").submit();
     }
 }
