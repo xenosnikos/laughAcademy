@@ -10,20 +10,38 @@ sans-serif;
 Thin 100 Light 300 Regular 400
 */
 
+h3 {
+   font-family: 'Hachi Maru Pop',
+   cursive;
+   color: #12B8DB;
+}
+
 body {
     min-height: 100vh;
+    font-family: 'Lato',
+    sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+p  {
+    text-align: center;
+}
+
+button {
+    text-transform:  uppercase;
 }
 
 .header {
     background-image: linear-gradient(to right, #fc4a1a, #f7b733);
     background-position: top;
     background-size: cover;
-    min-height: 35vh;
+    min-height: 17vh;
     position: relative;
 }
 
 /* SVG */
-.custom-shape-divider-bottom-1610502859 {
+.custom-shape-divider-bottom-1610575905 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -33,26 +51,28 @@ body {
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1610502859 svg {
+.custom-shape-divider-bottom-1610575905 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
+    width: calc(105% + 1.3px);
+    height: 52px;
 }
 
-.custom-shape-divider-bottom-1610502859 .shape-fill {
+.custom-shape-divider-bottom-1610575905 .shape-fill {
     fill: #FFFFFF;
 }
 
-/* .logo {
-    max-height: 7rem !important;
+.mobileLogo {
+    position: relative;
+    z-index: 1;
 }
 
-.logoName {
-    max-height: 5rem !important;
-} */
+/* Intro */
 
-
+.buttonOne {
+    color: #384A75;
+    clip-path: polygon(100% 4%, 100% 89%, 0 95%, 0 8%);
+}
 /* Footer */
 
 /* SVG */
@@ -62,3 +82,57 @@ body {
     position: relative;
     background-image: linear-gradient(to right, #fc4a1a, #f7b733);
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+    .intro {
+        --bs-gutter-x: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .video {
+        height: 100%;
+        width: 98%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    p {
+        padding-top: 2rem;
+        text-align: justify;
+    }
+
+    .buttonOne {
+        margin-top: 4rem;
+    }
+}
+
+/* w3schools list of media queries */
+
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {
+    ...
+}
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+    ...
+}
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+    ...
+}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+    ...
+}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+    ...
+}
+*/
