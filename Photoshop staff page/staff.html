@@ -50,6 +50,9 @@
         #textDisplay{
             padding:3em;
         }
+        #toggle-button{
+            min-width: 187px;
+        }
         @keyframes clownify{
             0% {background-image:url("Henri.jpg");}
             100% {background-image:url("Henri-clown.png");}
@@ -110,9 +113,9 @@
                     <p class="staff-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                     aliquip ex ea commodo consequat consectetur tempor.</p>
+                    <button id="toggle-button" class="btn-primary btn-lg" onclick=funBoring()>Make Me Fun!</button>
             </div>
         </div>
-        <button onclick="changePicture()">CHANGE PICTURE</button>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
