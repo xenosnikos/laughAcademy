@@ -19,7 +19,7 @@
 .custom-shape-divider-top-1610591588 svg {
   position: relative;
   display: block;
-  width: calc(105% + 1.3px);
+  width: calc(120% + 1.3px);
   height: 106px;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -33,24 +33,24 @@
   color: red;
   font-size: 2rem;
 }
-.searchbar{
-  background-image: url('assets/loupe.png') ;
+.search{
+  position: relative; 
+  float: right;
+  
   
 
 }
 #input_container {
   position:relative;
-  padding:0 0 0 20px;
   margin:0 20px;
   background:rgb(253, 253, 253);
-  direction: rtl;
   width: 200px;
   border: black 3px solid;
 }
 #input {
   height:20px;
   margin:0;
-  padding-right: 30px;
+  
   width: 100%;
   border: none;
 }
