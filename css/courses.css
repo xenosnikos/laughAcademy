@@ -1,4 +1,4 @@
-@use 'courses';
+
 .custom-shape-divider-top-1610591588 {
   
   position: absolute;
@@ -32,6 +32,33 @@
 .classLink{
   color: red;
   font-size: 2rem;
+}
+.searchbar{
+  background-image: url('assets/loupe.png') ;
+  
+
+}
+#input_container {
+  position:relative;
+  padding:0 0 0 20px;
+  margin:0 20px;
+  background:rgb(253, 253, 253);
+  direction: rtl;
+  width: 200px;
+  border: black 3px solid;
+}
+#input {
+  height:20px;
+  margin:0;
+  padding-right: 30px;
+  width: 100%;
+  border: none;
+}
+#input_img {
+  position:absolute;
+  bottom:5px;
+  right:5px;
+  
 }
 
 /*# sourceMappingURL=signup.css.map */
