@@ -22,76 +22,80 @@
             <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
         </svg>
       </div>
+      <!--to remove this line when merging with header and footer--><div style="margin-top:100px;"></div>
     </header>
     <div class="container">
-      <div class="row">
-        <div class="container col-9 col-md-7"> <!--left column-->
+      <form id="signupForm" action="http://jac.stephmoreau.ca/submitForm/" method="POST">
         <div class="row">
-          <label class="col-10 mt-3">Student Name</label>
-          <input type="text" name="firstName" class="col-10 col-md-5 mt-2 mx-2 input-mandatory">
-          <input type="text" name="lastName" class="col-10 col-md-5 mt-2 mx-2 input-mandatory">
-        </div>
-        <div class="row">
-          <label class="col-10 col-md-5 mt-3 order-md-1">Title</label>
-          <select name="title" class="col-10 col-md-5 mt-2 mx-2 order-md-3 input-mandatory">
-            <option value="undefined">Please Select Title</option>
-            <option value="miss">Miss</option>
-            <option value="mr">Mr.</option>
-            <option value="mrs">Mrs.</option>
-            <option value="ms">Ms.</option>
-            <option value="mx">Mx.</option>
-          </select>
-          <label class="col-10 col-md-5 mt-3 mx-md-3 order-md-2">Birth Date</label>
-          <input type="date" name="birthDate" class="col-10 col-md-5 mt-2 mx-2 order-md-4 input-mandatory">
-        </div>
-        <div class="row">
-          <label class="col-10 mt-3">User Name</label>
-          <input type="text" name="userName" class="col-10 col-md-5 mt-2 mx-2 input-mandatory">
-        </div>
-        <div class="row">
-          <label class="col-10 col-md-5 mt-3 order-md-1">Password</label>
-          <input type="password" name="passwordO" class="col-10 col-md-5 mt-2 mx-2 order-md-3 input-mandatory">
-          <label class="col-10 col-md-5 mt-3 mx-md-3 order-md-2">Password Verification</label>
-          <input type="password" name="passwordV" class="col-10 col-md-5 mt-2 mx-2 order-md-4 input-mandatory">
-        </div>
-        <div class="row">
-          <label class="col-10 col-md-5 mt-3">Address</label>
-          <input type="text" name="addressLineOne" class="col-10 col-md-8 mt-2 mx-2 input-mandatory">
-          <input type="text" name="addressLineTwo" class="col-10 col-md-8 mt-2 mx-2">
-        </div>
-        <div class="row">
-          <label class="col-10 col-md-5 mt-3 order-md-1">Email</label>
-          <input type="email" name="password" class="col-10 col-md-5 mt-2 mx-2 order-md-3">
-          <label class="col-10 col-md-5 mt-3 mx-md-3 order-md-2">Mobile</label>
-          <input type="tel" name="passwordVerify" class="col-10 col-md-5 mt-2 mx-2 order-md-4 input-mandatory">
-        </div>
-        </div> <!--end of left column-->
-        <div class="container col-9 col-md-5"> <!--right column-->
+          <div class="container col-9 col-md-7"> <!--left column-->
           <div class="row">
-            <label class="col-10 mt-3">Courses</label>
-            <select name="courses" class="col-10 mt-2 mx-2">
-              <option value="undefined">Please Select Course</option>
-              <option value="miss">HAHA</option>
-              <option value="mr">HEHE</option>
-              <option value="mrs">GIGI</option>
+            <label class="col-10 mt-3">Student Name</label>
+            <input id="firstName" type="text" name="firstName" class="col-10 col-md-5 mt-2 mx-2 input-mandatory">
+            <input id="lastName" type="text" name="lastName" class="col-10 col-md-5 mt-2 mx-2 input-mandatory">
+          </div>
+          <div class="row">
+            <label class="col-10 col-md-5 mt-3 order-md-1">Title</label>
+            <select id="title" name="title" class="col-10 col-md-5 mt-2 mx-2 order-md-3 input-mandatory">
+              <option value="undefined">Please Select Title</option>
+              <option value="miss">Miss</option>
+              <option value="mr">Mr.</option>
+              <option value="mrs">Mrs.</option>
+              <option value="ms">Ms.</option>
+              <option value="mx">Mx.</option>
             </select>
+            <label class="col-10 col-md-5 mt-3 mx-md-3 order-md-2">Birth Date</label>
+            <input id="birthDate" type="date" name="birthDate" class="col-10 col-md-5 mt-2 mx-2 order-md-4 input-mandatory">
           </div>
-          <div class="row d-none d-md-block">
-            <p class="my-4 py-5"></p>
-            <p class="py-1"></p>
-            <p class="my-4 py-5"></p>
+          <div class="row">
+            <label class="col-10 mt-3">User Name</label>
+            <input id="userName" type="text" name="userName" class="col-10 col-md-5 mt-2 mx-2 input-mandatory">
           </div>
-          <div class="row mt-md-2">
-            <label class="col-10 mt-3">Comments</label>
-            <textarea name="comments" rows="6" cols="20" class="col-10 mt-3 mx-2"></textarea>
+          <div class="row">
+            <label class="col-10 col-md-5 mt-3 order-md-1">Password</label>
+            <input id="passwordO" type="password" name="passwordO" class="col-10 col-md-5 mt-2 mx-2 order-md-3 input-mandatory">
+            <label class="col-10 col-md-5 mt-3 mx-md-3 order-md-2">Password Verification</label>
+            <input id="passwordV" type="password" name="passwordV" class="col-10 col-md-5 mt-2 mx-2 order-md-4 input-mandatory">
           </div>
-        </div> <!--end of right column-->
-      </div> <!--end of row containing left and right column-->
-      <div class="row">
-        <div class="col-9 offset-4 offset-md-5">
-          <button type="button" class="btn btn-danger btn-lg mt-3">Submit</button>
+          <div class="row">
+            <label class="col-10 col-md-5 mt-3">Address</label>
+            <input id="addressLineOne" type="text" name="addressLineOne" class="col-10 col-md-8 mt-2 mx-2 input-mandatory">
+            <input id="addressLineTwo" type="text" name="addressLineTwo" class="col-10 col-md-8 mt-2 mx-2">
+          </div>
+          <div class="row">
+            <label class="col-10 col-md-5 mt-3 order-md-1">Email</label>
+            <input id="email" type="email" name="email" class="col-10 col-md-5 mt-2 mx-2 order-md-3">
+            <label class="col-10 col-md-5 mt-3 mx-md-3 order-md-2">Mobile</label>
+            <input id="mobile" type="tel" name="mobile" class="col-10 col-md-5 mt-2 mx-2 order-md-4 input-mandatory">
+          </div>
+          </div> <!--end of left column-->
+          <div class="container col-9 col-md-5"> <!--right column-->
+            <div class="row">
+              <label class="col-10 mt-3">Courses</label>
+              <select id="courses" name="courses" class="col-10 mt-2 mx-2">
+                <option value="undefined">Please Select Course</option>
+                <option value="miss">HAHA</option>
+                <option value="mr">HEHE</option>
+                <option value="mrs">GIGI</option>
+              </select>
+            </div>
+            <div class="row d-none d-md-block">
+              <p class="my-4 py-5"></p>
+              <p class="py-1"></p>
+              <p class="my-4 py-5"></p>
+            </div>
+            <div class="row mt-md-2">
+              <label class="col-10 mt-3">Comments</label>
+              <textarea id="comments" name="comments" rows="6" cols="20" class="col-10 mt-3 mx-2"></textarea>
+            </div>
+          </div> <!--end of right column-->
+        </div> <!--end of row containing left and right column-->
+        <div class="row">
+          <div class="col-9 offset-4 offset-md-5">
+            <button type="submit" class="btn btn-danger btn-lg mt-3" onclick="signup()">Submit</button>
+          </div>
         </div>
-      </div>
+      </form>
+      
     </div> <!--end of form container-->
     <footer class="container-fluid">
       <!-- wave shape of footer -->
@@ -104,7 +108,7 @@
       </div>
     </footer>
     <!-- Project JS -->
-    <sscript src="js/signup.js"></sscript>
+    <script src="js/signup.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
