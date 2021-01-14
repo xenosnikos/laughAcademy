@@ -10,26 +10,41 @@ sans-serif;
 Thin 100 Light 300 Regular 400
 */
 
-h3 {
-   font-family: 'Hachi Maru Pop',
-   cursive;
-   color: #12B8DB;
+h3,
+h6 {
+    font-family: 'Hachi Maru Pop',
+        cursive;
+    color: #7C48F0;
 }
 
+h6 {
+    color: #000;
+}
+
+
 body {
-    min-height: 100vh;
     font-family: 'Lato',
-    sans-serif;
+        sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
 }
 
-p  {
+p {
     text-align: center;
 }
 
 button {
-    text-transform:  uppercase;
+    text-transform: uppercase;
+}
+
+section {
+    margin-top: 4rem !important;
+}
+
+footer {
+    min-height: 50vh;
+    position: relative;
+    background-image: linear-gradient(to right, #fc4a1a, #f7b733);
 }
 
 .header {
@@ -67,21 +82,85 @@ button {
     z-index: 1;
 }
 
-/* Intro */
+/* Intro section */
 
 .buttonOne {
-    color: #384A75;
+    color: #fff;
     clip-path: polygon(100% 4%, 100% 89%, 0 95%, 0 8%);
+    background-color: #7C48F0;
 }
+
+/* Explore courses section */
+
+.explore {
+    margin-top: 7rem !important;
+}
+
+.clownIcon {
+    max-height: 3rem;
+}
+
+
+
 /* Footer */
 
-/* SVG */
-
-.footer {
-    height: 20vh;
-    position: relative;
-    background-image: linear-gradient(to right, #fc4a1a, #f7b733);
+.buttonTwo {
+    color: #fff;
+    clip-path: polygon(0 21%, 95% 32%, 98% 77%, 4% 68%);
+    background-color: #F6B733;
 }
+
+.socialIcons {
+    height: 2rem;
+    width: 3.5rem;
+}
+
+/* SVG */
+.custom-shape-divider-top-1610589798 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1610589798 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 66px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1610589798 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/* BLOBS */
+.blob {
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    right: 100px;
+    transform: translateY(-20px) translateX(-700px) rotate(20deg);
+    opacity: 0.8;
+}
+
+.blobTwo {
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    z-index: -1;
+    right: 100px;
+    transform: translateY(-280px) translateX(175px);
+    opacity: 0.8;
+}
+
+
+
 
 /* Media Queries */
 
@@ -95,6 +174,10 @@ button {
     .video {
         height: 100%;
         width: 98%;
+    }
+
+    footer {
+        min-height: 30vh;
     }
 }
 
