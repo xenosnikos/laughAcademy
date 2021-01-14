@@ -46,6 +46,32 @@ footer {
   position: relative;
 }
 
+.hatLogo:hover {
+    animation: rotate 1s;
+}
+
+.nav-link:hover {
+  transform: translateY(-.1rem) !important;
+  text-shadow: 0.5rem 0 1rem rgba(15, 10, 10, 0.3);
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(40deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
 /* SVG */
 .custom-shape-divider-bottom-1610575905 {
   position: absolute;
@@ -181,9 +207,18 @@ footer {
   background-color: #F6B733;
 }
 
+.buttonTwo:hover {
+  transform: scale(1.5);
+  clip-path: polygon(0 24%, 100% 14%, 100% 65%, 0 78%);
+}
+
 .footerContent>*,
 .socialContainer>* {
   z-index: 100 !important;
+}
+
+.socialIcons:hover {
+  transform: translateY(-.4rem) !important;
 }
 
 /* SVG */
@@ -310,8 +345,9 @@ footer {
   }
 }
 
-/* Nick */
 
+
+/* Nick */
 
 .thumbnail{
     width: 200px;
