@@ -59,6 +59,7 @@ h2{
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-direction: alternate; 
 }
 .baloon-transition{
     transition-property:border-radius;
@@ -75,7 +76,7 @@ h2{
     36% {color:blue;}
     65% {color:orange;}
     78% {color:purple;}
-    100% {color:yellow;}
+    100% {color:red;}
 }
 @media screen and (max-width: 768px){
     #myCarousel{
