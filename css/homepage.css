@@ -46,6 +46,12 @@ section {
 .whiteLink {
     color: #fff;
     text-decoration: none;
+    display: block;
+}
+
+whiteLink:active, whiteLink:focus {
+    outline: 0 !important;
+    border: none !important;
 }
 
 .whiteLink:hover {
