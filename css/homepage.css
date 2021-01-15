@@ -1,4 +1,4 @@
-
+/* Emma */
 
 h1, h2, h3, h4, h5, h6 {
     color: #7C48F0;
@@ -41,17 +41,6 @@ section {
 
 .video {
     z-index: 200;
-}
-
-.whiteLink {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
-
-whiteLink:active, whiteLink:focus {
-    outline: 0 !important;
-    border: none !important;
 }
 
 .whiteLink:hover {
