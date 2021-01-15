@@ -67,7 +67,7 @@ function reviewForm(){
     console.log(`password: ${pswdOne}`);
     console.log(`password again: ${pswdTwo}`);
     if(pswdOne !== pswdTwo){
-        alert("password is wrong");
+        alert("passwords are not matched");
         passwordOElement.classList.add("input-missing");
         passwordVElement.classList.add("input-missing");
         result = false;
