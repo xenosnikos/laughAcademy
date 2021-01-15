@@ -78,6 +78,7 @@ function reviewForm(){
     let emailSearchMatches = email.match(emailPattern);
     //alert(`email is matched? ${emailSearchMatches}`);
     if(emailSearchMatches == null){
+        alert("email format is not matched");
         emailElement.classList.add("input-missing");
         result = false;
         return result;
@@ -87,6 +88,7 @@ function reviewForm(){
     let mobileSearchMatches = mobile.match(mobilePattern);
     //alert(`mobile is matched? ${mobileSearchMatches}`);
     if(mobileSearchMatches == null){
+        alert("phone number must be 10 digits");
         mobileElement.classList.add("input-missing");
         result = false;
         return result;
