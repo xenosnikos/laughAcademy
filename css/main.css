@@ -358,3 +358,31 @@ footer {
   .card-header .collapsed .fa {
     transform: rotate(90deg);
   }
+  
+  .search{
+  
+    float: right;
+    
+    
+  
+  }
+  #input_container {
+    position:relative;
+    margin:0 20px;
+    background:rgb(253, 253, 253);
+    width: 200px;
+    border: black 3px solid;
+  }
+  #input {
+    height:20px;
+    margin:0;
+    
+    width: 100%;
+    border: none;
+  }
+  #input_img {
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    
+  }
