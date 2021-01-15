@@ -33,15 +33,19 @@ body{
     padding:3em;
 }
 #toggle-button{
-    min-width: 187px;
+    min-width: 216px;
 }
 h1{
-    font-size: 3em;
+    font-size: 2.7em;
     font-weight:bold;
+    font-family: fantasy;
+    letter-spacing: 0.05em;
 }
 h2{
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight:bold;
+    font-family: fantasy;
+    letter-spacing: 0.05em;
 }
 .picture-size{
     max-height:250px;
@@ -70,6 +74,9 @@ h2{
 }
 .baloon-transition:hover{
     border-radius: 50%;
+}
+.adjust-header{
+    margin-bottom:7em;
 }
 @keyframes rainbowAnimation{
     0% {color:red;}
@@ -100,5 +107,8 @@ h2{
     }
     .border-on-sml{
         border-top:2px solid black;
+    }
+    .adjust-header{
+        margin-bottom:2em;
     }
 }

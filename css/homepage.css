@@ -1,19 +1,6 @@
-/* Font rules */
 
-/* 
-font-family: 'Hachi Maru Pop',
-cursive;
-Regular 400
 
-font-family: 'Lato',
-sans-serif;
-Thin 100 Light 300 Regular 400
-*/
-
-h3,
-h6 {
-    font-family: 'Hachi Maru Pop',
-        cursive;
+h1, h2, h3, h4, h5, h6 {
     color: #7C48F0;
 }
 
@@ -23,8 +10,6 @@ h6 {
 
 
 body {
-    font-family: 'Lato',
-        sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -41,46 +26,6 @@ section {
     margin-top: 4rem !important;
 }
 
-footer {
-    min-height: 50vh;
-    position: relative;
-    background-image: linear-gradient(to right, #fc4a1a, #f7b733);
-}
-
-.header {
-    background-image: linear-gradient(to right, #fc4a1a, #f7b733);
-    background-position: top;
-    background-size: cover;
-    min-height: 17vh;
-    position: relative;
-}
-
-/* SVG */
-.custom-shape-divider-bottom-1610575905 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1610575905 svg {
-    position: relative;
-    display: block;
-    width: calc(105% + 1.3px);
-    height: 52px;
-}
-
-.custom-shape-divider-bottom-1610575905 .shape-fill {
-    fill: #FFFFFF;
-}
-
-.mobileLogo {
-    position: relative;
-    z-index: 1;
-}
 
 /* Intro section */
 
@@ -90,75 +35,81 @@ footer {
     background-color: #7C48F0;
 }
 
+.buttonOne:hover {
+    transform: scale(1.5);
+}
+
+.video {
+    z-index: 200;
+}
+
+.whiteLink {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+whiteLink:active, whiteLink:focus {
+    outline: 0 !important;
+    border: none !important;
+}
+
+.whiteLink:hover {
+    color: #000;
+}
+
 /* Explore courses section */
 
 .explore {
-    margin-top: 7rem !important;
+    margin: 7rem 0 !important;
 }
 
 .clownIcon {
     max-height: 3rem;
 }
 
-
-
-/* Footer */
-
-.buttonTwo {
-    color: #fff;
-    clip-path: polygon(0 21%, 95% 32%, 98% 77%, 4% 68%);
-    background-color: #F6B733;
+.clownIcon:hover {
+    animation: rotateBig 1s;
 }
 
-.socialIcons {
-    height: 2rem;
-    width: 3.5rem;
+@keyframes rotateBig {
+    0% {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+
+    25% {
+        opacity: 1;
+        transform: rotate(90deg) scale(1.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(180deg) scale(1.2);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translate(270deg) scale(1.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(360deg) scale(1);
+    }
 }
 
-/* SVG */
-.custom-shape-divider-top-1610589798 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+.buttonThree {
+    clip-path: polygon(20% 33%, 91% 21%, 91% 69%, 20% 69%);
 }
 
-.custom-shape-divider-top-1610589798 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 66px;
-    transform: rotateY(180deg);
+.element {
+    margin: 0 1rem;
 }
 
-.custom-shape-divider-top-1610589798 .shape-fill {
-    fill: #FFFFFF;
+.element > img {
+    height: 3%;
 }
-
-
-/* BLOBS */
-.blob {
-    width: 1000px;
-    height: 500px;
-    position: absolute;
-    z-index: -1;
-    right: 100px;
-    transform: translateY(-20px) translateX(-700px) rotate(20deg);
-    opacity: 0.8;
-}
-
-.blobTwo {
-    width: 400px;
-    height: 700px;
-    position: absolute;
-    z-index: -1;
-    right: 100px;
-    transform: translateY(-280px) translateX(175px);
-    opacity: 0.8;
-}
-
 
 
 
@@ -174,10 +125,6 @@ footer {
     .video {
         height: 100%;
         width: 98%;
-    }
-
-    footer {
-        min-height: 30vh;
     }
 }
 
