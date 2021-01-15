@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Lato:wght@100;300;400&display=swap"
         rel="stylesheet">
-        <!-- Favicon -->
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
@@ -102,32 +102,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="homepage.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="staff.html">Staff</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="courses.html">Courses</a>
+                        <a class="nav-link" href="courses.html">Courses</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="signin.html">Sign In</a>
                     </li>
                 </ul>
             </div>
-            
 
-        
-       
-    </nav>
-    <!-- !add search bar -->
-    <div class="d-none d-lg-block search" id="input_container">
-        <input type="text" id="input" value>
-        <img src="assets/loupe.png" id="input_img" alt="loupe">
+        </nav>
 
-    </div>
+        <!-- Search bar -->
+        <div class="d-none d-lg-block search" id="input_container">
+            <input type="text" id="input" value>
+            <img src="assets/loupe.png" id="input_img" alt="loupe icon">
 
-
+        </div>
         <!-- school name for mobile -->
         <div class="col-12 d-md-none text-center p-5 pt-3 mobileLogo">
             <img class="img-fluid" src="assets/logo-name.png" alt="school name logo">
@@ -152,7 +148,7 @@
 
                 <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                     <div class="card-body">
-                        <img class="thumbnail" src="assets/courses/juggling.jpg" alt="juggling.jpg">
+                        <img class="thumbnail zoom" src="assets/courses/juggling.jpg" alt="juggling.jpg">
                         <p class="float-right">
                             put a bird on it squid single-origin coffee nulla assumenda
                             shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
@@ -161,12 +157,16 @@
                             raw denim
                             aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
                             VHS.</p>
-                            <a href="signup.html" class="btn btn-danger " role="button">Click Here To Register</a>
+                        <a href="signup.html" class="btn btn-danger " role="button">Click Here To Register</a>
                     </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary row" data-toggle="modal" data-target="#exampleModal">
+                        See Schedule
+                    </button>
                 </div>
             </div>
-            
-            
+
+
             <div class="card">
                 <h5 class="card-header" role="tab" id="headingTwo">
                     <a class="collapsed d-block classLink" data-toggle="collapse" data-parent="#accordion"
@@ -176,7 +176,7 @@
                 </h5>
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="card-body">
-                        <img class="thumbnail" src="assets/courses/baloonAnimals.jpg" alt="">
+                        <img class="thumbnail zoom" src="assets/courses/baloonAnimals.jpg" alt="">
                         <p class="float-right">
                             put a bird on it squid single-origin coffee nulla assumenda
                             shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
@@ -185,8 +185,13 @@
                             raw denim
                             aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
                             VHS.</p>
-                            <a href="signup.html" class="btn btn-danger " role="button">Click Here To Register</a>
+                        <a href="signup.html" class="btn btn-danger " role="button">Click Here To Register</a>
+
                     </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary row" data-toggle="modal" data-target="#exampleModal">
+                        See Schedule
+                    </button>
                 </div>
             </div>
             <div class="card">
@@ -198,7 +203,7 @@
                 </h5>
                 <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="card-body">
-                        <img class="thumbnail" src="assets/courses/unicycle.jpg" alt="">
+                        <img class="thumbnail zoom" src="assets/courses/unicycle.jpg" alt="">
                         <p class="float-right">
                             put a bird on it squid single-origin coffee nulla assumenda
                             shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
@@ -209,7 +214,12 @@
                             VHS.</p>
                     </div>
                     <a href="signup.html" class="btn btn-danger " role="button">Click Here To Register</a>
+                    <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary row" data-toggle="modal" data-target="#exampleModal">
+                    See Schedule
+                </button>
                 </div>
+                
             </div>
             <div class="card">
                 <h5 class="card-header" role="tab" id="headingFour">
@@ -220,7 +230,7 @@
                 </h5>
                 <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
                     <div class="card-body">
-                        <img class="thumbnail" src="assets/courses/comedy.jpg" alt="">
+                        <img class="thumbnail zoom" src="assets/courses/comedy.jpg" alt="">
                         <p class="float-right">
                             put a bird on it squid single-origin coffee nulla assumenda
                             shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
@@ -229,10 +239,14 @@
                             raw denim
                             aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
                             VHS.</p>
-                            <a href="signup.html" class="btn btn-danger " role="button">Click Here To Register</a>
+                        <a href="signup.html" class="btn btn-danger " role="button">Click Here To Register</a>
                     </div>
-
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary row" data-toggle="modal" data-target="#exampleModal">
+                        See Schedule
+                    </button>
                 </div>
+
             </div>
             <div class="card">
                 <h5 class="card-header" role="tab" id="headingFive">
@@ -243,7 +257,7 @@
                 </h5>
                 <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
                     <div class="card-body">
-                        <img class="thumbnail" src="assets/courses/makeup.jpg" alt="">
+                        <img class="thumbnail zoom" src="assets/courses/makeup.jpg" alt="">
                         <p class="float-right">
                             put a bird on it squid single-origin coffee nulla assumenda
                             shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
@@ -251,17 +265,51 @@
                             proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
                             raw denim
                             aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                            VHS.</p>
-                            <a href="signup.html" class="btn btn-danger " role="button">Click Here To Register</a>
+                            VHS.
+                        </p>
+                        <a href="signup.html" class="btn btn-danger " role="button">Click Here To Register</a>
                     </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary row" data-toggle="modal" data-target="#exampleModal">
+                        See Schedule
+                    </button>
+                </div>
+                
+            </div>
+              <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="calendar" src="assets/calendar.png" alt="calendar">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
                 </div>
             </div>
-            
         </div>
-        <footer class="footer row pt-5">
+    </div>    
 
-            <!-- SVG background -->
-            <!-- !there's a glitch in the svg, come back to it later -->
+        </div>
+
+
+
+
+
+
+        <!-- footer -->
+
+        <footer class="footer pt-5 mt-5">
+
+            <!-- SVG footer background -->
             <div class="custom-shape-divider-top-1610589798">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
@@ -271,48 +319,102 @@
                 </svg>
             </div>
 
-            <!-- register button -->
-            <button type="button" class="btn btn-lg col-6 mx-auto buttonTwo">Register now</button>
-
-            <div class="missionContainer">
-                <h6 class="text-center missionStatementHeader">
-                    Mission Statement
-                </h6>
-                <p class="text-center fs-6 missionStatementP">
-                    "Bring joy and laughter to the world. We believe that clowning is an
-                    art like no other."
-                </p>
+            <!-- SVG footer layer 1 -->
+            <div class="custom-shape-divider-bottom-1610642658">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
             </div>
 
-            <div class="phoneContainer">
-                <h6 class="text-center phoneHeading">
-                    Phone
-                </h6>
-                <p class="text-center fs-6 phoneNumber">
-                    (555) 555-5555
-                </p>
+            <!-- SVG footer layer 2 -->
+            <div class="custom-shape-divider-bottom-1610643294">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
             </div>
 
-            <div class="addressContainer">
-                <h6 class="text-center addressHeading">
-                    Address
-                </h6>
-                <p class="text-center fs-6 addressNumber">
-                    500 Clown Road, Clown Town
-                </p>
+            <!-- SVG footer layer 3 -->
+            <div class="custom-shape-divider-bottom-1610643389">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
             </div>
-        
 
-            <!-- !come back to it tmrw -->
-            <!-- <div class="container">
-                <img class="socialIcons" src="assets/twitter.png" alt="twitter icon">
-                <img class="socialIcons" src="assets/instagram.png" alt="instagram icon">
-                <img class="socialIcons " src="assets/facebook.png" alt="facebook icon">
-        </div> -->
+            <!-- SVG footer layer 4 -->
+            <div class="custom-shape-divider-bottom-1610643638">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+
+
+
+            <div class="row p-4 footerContent">
+
+                <div class="col-12 col-sm-3 text-center mb-3">
+                    <a class="btn btn-lg p-4 pt-sm-5 pb-sm-5 buttonTwo" href="signup.html">Register now</a>
+                </div>
+
+                <div class="missionContainer col-12 col-sm-3 mb-3">
+                    <h6 class="text-center missionStatementHeader">
+                        Mission Statement
+                    </h6>
+                    <p class="text-center fs-6 missionStatementP">
+                        "Bring joy and laughter to the world. We believe that clowning is an
+                        art like no other."
+                    </p>
+                </div>
+
+                <div class="phoneContainer col-12 col-sm-3 mb-3 align-middle">
+                    <h6 class="text-center phoneHeading">
+                        Phone
+                    </h6>
+                    <p class="text-center fs-6 phoneNumber">
+                        (555) 555-5555
+                    </p>
+                </div>
+
+                <div class="addressContainer col-12 col-sm-3 mb-3 align-middle">
+                    <h6 class="text-center addressHeading">
+                        Address
+                    </h6>
+                    <p class="text-center fs-6 addressNumber">
+                        500 Clown Road, Clown Town
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row socialContainer">
+                <div class="col-12 text-center">
+                    <a href="https://twitter.com/home" class="link"><img class="socialIcons m-2 m-sm-3"
+                            src="assets/twitter.png" alt="twitter icon"></a>
+                    <a href="https://www.instagram.com" class="link"><img class="socialIcons m-2 m-sm-3"
+                            src="assets/instagram.png" alt="instagram icon"></a>
+                    <a href="https://www.facebook.com" class="link"><img class="socialIcons m-2 m-sm-3 "
+                            src="assets/facebook.png" alt="facebook icon"></a>
+                    <a href="https://vimeo.com" class="link"><img class="socialIcons m-2 m-sm-3" src="assets/vimeo.png"
+                            alt="vimeo icon"></a>
+                    <a href="https://www.youtube.com" class="link"><img class="socialIcons m-2 m-sm-3"
+                            src="assets/youtube.png" alt="youtube icon"></a>
+                </div>
+            </div>
 
         </footer>
-    
-    
+
+
 
         <!-- Project JS -->
         <sscript src="js/signup.js"></sscript>
@@ -320,11 +422,11 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
             integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
         </script>
-        
+
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
         </script>
-       
+
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
