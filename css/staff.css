@@ -38,13 +38,13 @@ body{
 h1{
     font-size: 2.7em;
     font-weight:bold;
-    font-family: fantasy;
+    /* font-family: fantasy; */
     letter-spacing: 0.05em;
 }
 h2{
     font-size: 2.2em;
     font-weight:bold;
-    font-family: fantasy;
+    /* font-family: fantasy; */
     letter-spacing: 0.05em;
 }
 .picture-size{
