@@ -14,7 +14,7 @@
             url = '<img class="img-fluid clownify-henri" src="assets/staff/Peter-clown.jpg">';
             headingContent = "Peter VanHaussen";
             jobDescription = "Artistic-Director and Founder";
-            textContent = 'PETER Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
+            textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
             ' et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
             'aliquip ex ea commodo consequat consectetur tempor.'
             pictureToggled= true;
@@ -28,7 +28,7 @@
             url = '<img class="img-fluid clownify-henri" src="assets/staff/Henri-clown.png">';
             headingContent = "Henry Cocolata";
             jobDescription = "Co-Artistic-Director";
-            textContent = 'HENRY Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
+            textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
             ' et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
             'aliquip ex ea commodo consequat consectetur tempor.'
             pictureToggled= true;
@@ -42,7 +42,7 @@
             url = '<img class="img-fluid clownify-henri" src="assets/staff/Simon-clown.jpg">';
             headingContent = "Simon McMallet";
             jobDescription = "Set Coordinator";
-            textContent = 'SIMON Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
+            textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
             ' et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
             'aliquip ex ea commodo consequat consectetur tempor.'
             pictureToggled= true;
@@ -56,7 +56,7 @@
             url = '<img class="img-fluid clownify-henri" src="assets/staff/Shawna-clown.jpg">';
             headingContent = "Shawna Smith";
             jobDescription = "Administrator";
-            textContent = 'SHAWNA Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
+            textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
             ' et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
             'aliquip ex ea commodo consequat consectetur tempor.'
             pictureToggled= true;
@@ -70,7 +70,7 @@
             url = '<img class="img-fluid " src="assets/staff/Julie-clown.jpg">';
             headingContent = "Julie Hanes";
             jobDescription = "Staff Coordinator";
-            textContent = 'JULIE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
+            textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'+
             ' et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
             'aliquip ex ea commodo consequat consectetur tempor.'
             buttonContent = '<button id="toggle-button" class="btn-primary btn-lg" onclick=funBoring()>Make Me Boring!</button>';
